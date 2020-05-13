@@ -20,7 +20,7 @@ describe(index.js, () => {
     })
   })
 
-  it(console.log("DAY"), done => {
+  it(console.error("DAY"), done => {
     const spy = expect.spyOn(console, 'log').andCallThrough()
 
     jsdom.env(html, [src], {
